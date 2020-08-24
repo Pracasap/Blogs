@@ -1,9 +1,35 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>My Awesome Blogs!</title>
-</head>
-<body>
+<!doctype html>
+<html lang="en">
 
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display:700,900" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/4.5/examples/blog/blog.css" rel="stylesheet">
+
+    <title>My Blogs!</title>
+  </head>
+
+  <body>
+  	{% include 'navbar.html' %}
+  	<br>
+ 	<main role='main' class="container">
+    
+    	{% block content %}
+    	{% endblock %}
+    
+	</main>
+	<footer class="blog-footer">
+	  <p>Copyright © 2020 Prakashblogs.com</p>
+	  <p>
+	    <a href="#">Back to top</a>
+	  </p>
+	</footer>
+  </body>
+
 </html>
+

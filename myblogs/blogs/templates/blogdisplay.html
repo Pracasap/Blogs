@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+
+
+{% block content %}
+ 
+
+
+{% for instance in obj %}
+<div class="blog-post">
+<h2 class="blog-post-title">{{instance.title|title}}</h2>
+<p class="blog-post-meta">{{ instance.created }} by {{ instance.author }}</p>
+<p>	{{instance.body}} </p>
+</div>
+{% endfor %}
+
+
+
+{% endblock %}
